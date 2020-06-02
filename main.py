@@ -32,4 +32,4 @@ async def on_message(message):
 
 
 
-client.run()
+client.run('insert bot token here')

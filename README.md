@@ -8,7 +8,7 @@ Before getting into the code, I use the [Discord Developer Portal](https://disco
 ## Initialisation
 To start off, I initiate these modules to lay the foundations in order to set up a Discord client.
 
-```
+``` python
 import wikipedia
 import os
 import discord
@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 
 Subsequently, I intialise the Discord bot via the `load_dontenv` function and `TOKEN` variable so that the Discord bot is able to connect and run the code and algorithms below.
 
-```
+``` python
 load_dotenv()
 TOKEN = os.getenv('insert_bot_token_here')
 ```
@@ -30,14 +30,14 @@ Finally, I initialise the `client` variable to set up the Discord bot.
 > Replace "IDHERE" in "client_id=IDHERE" with your own bot Client ID.
 The following code below will output whether the Discord bot is connected to the server or not.
 
-```
+``` python
 @client.event
 async def on_ready():
     print(f'{client.user} has connected to Discord!')
 ```
 
 The code below allows the bot to read user messages and respond in a manner as programmed.
-```
+``` python
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -68,3 +68,8 @@ Finally, I run the Discord client
 `client.run('insert bot token here')`
 
 ## Running the Bot
+![screenshot](https://github.com/perxpective/Discord-Wikipedia-Bot/blob/master/dry%20run/Screenshot%202020-06-02%20at%2018.08.08.png)
+![screenshot](https://github.com/perxpective/Discord-Wikipedia-Bot/blob/master/dry%20run/Screenshot%202020-06-02%20at%2018.08.20.png)
+![screenshot](https://github.com/perxpective/Discord-Wikipedia-Bot/blob/master/dry%20run/Screenshot%202020-06-02%20at%2018.09.12.png)
+![screenshot](https://github.com/perxpective/Discord-Wikipedia-Bot/blob/master/dry%20run/Screenshot%202020-06-02%20at%2018.09.59.png)
+![screenshot](https://github.com/perxpective/Discord-Wikipedia-Bot/blob/master/dry%20run/Screenshot%202020-06-02%20at%2018.42.38.png)

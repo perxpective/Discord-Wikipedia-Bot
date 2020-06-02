@@ -21,7 +21,7 @@ Subsequently, I intialise the Discord bot via the `load_dontenv` function and `T
 load_dotenv()
 TOKEN = os.getenv('insert_bot_token_here')
 ```
-Finally, I run the `client` variable to run the Discord bot.
+Finally, I initialise the `client` variable to set up the Discord bot.
 
 `client = discord.Client()`
 
@@ -63,5 +63,8 @@ The user can retrieve Wikipedia summaries using the command "!search". This is d
 > Disclaimer: Some terms may not be searchable or the content is way too long to be messaged on your server's text channel. Thus, the bot is only programmed to send a maximum of 15 sentences from the Wikipedia summary. 
 
 The user can retrieve Wikipedia URLs using the command "!url". This is done via the `wikipedia.page().url`
+
+Finally, I run the Discord client
+`client.run('insert bot token here')`
 
 ## Running the Bot

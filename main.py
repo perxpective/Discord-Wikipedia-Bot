@@ -4,7 +4,7 @@ import discord
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv('NzA5MzE1NjM5Nzg0NzY3NTE4.XrzTYw.KgVkRPo12jMXXU0HdDbW4c87dL8')
+TOKEN = os.getenv('insert token name here')
 
 client = discord.Client()
 
@@ -32,4 +32,4 @@ async def on_message(message):
 
 
 
-client.run('NzA5MzE1NjM5Nzg0NzY3NTE4.XrzT0A.vm8h08pwGhSQhaO129pu8sJtpCY')
+client.run()

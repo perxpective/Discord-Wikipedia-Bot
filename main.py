@@ -4,7 +4,7 @@ import discord
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv('insert token name here')
+TOKEN = os.getenv('NzA5MzE1NjM5Nzg0NzY3NTE4.XxRNhg.rh-NzasuVdc2ooOaOQwmZ9yRY3k')
 
 client = discord.Client()
 
@@ -32,4 +32,4 @@ async def on_message(message):
 
 
 
-client.run('insert bot token here')
+client.run('NzA5MzE1NjM5Nzg0NzY3NTE4.XxRNhg.rh-NzasuVdc2ooOaOQwmZ9yRY3k')
